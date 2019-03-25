@@ -1,0 +1,251 @@
+/* General styling */
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+hr {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    text-indent: 0;
+}
+
+.search_input_box {
+    margin: 1em 0;
+}
+
+body h1,
+.search_input_box {
+    text-align: center;
+}
+
+#link_box_one {
+    width: 160px;
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 25px;
+    text-indent: 3px;
+    display: inline-block;
+    margin-bottom: 1em;
+}
+
+#link_box_two {
+    width: 160px;
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 25px;
+    text-indent: 3px;
+    display: inline-block;
+}
+
+.color_filled_blue {
+    background-color: aquamarine;
+}
+
+.color_filled_pink {
+    background-color: hotpink;
+}
+
+.switch_buttons {
+    text-align: center;
+}
+
+input {
+    border: 1px solid black;
+    border-radius: 25px;
+    text-indent: 10px;
+    font-size: 1.5em;
+    width: 170px;
+}
+
+/******
+/* Dialog box styling */
+
+#dialog {
+    background-color: white;
+    border: 3px solid white;
+    text-align: center;
+}
+
+.ui-dialog-titlebar {
+    background-color: white;
+    border: none !important;
+}
+
+.ui-dialog-titlebar-close {
+    background-color: white !important;
+    border: none !important;
+}
+
+.ui-dialog-titlebar-close:hover {
+    background-color: white !important;
+    border: none !important;
+}
+
+.ui-icon {
+    width: 18px;
+    height: 18px;
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+    body h1,
+    .search_input_box {
+        text-align: left;
+    }
+
+    #link_box_one,
+    #link_box_two {
+        display: block;
+    }
+
+    input {
+        margin: 0;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+    .link_box {
+        width: 160px;
+    }
+
+    input {
+        width: 170px;
+    }
+}
+
+/******
+
+/*Float page styling*/
+
+.float_h1 {
+    color: hotpink;
+}
+
+.float_body {
+    margin: auto;
+    max-width: 80%;
+}
+
+.float_body a {
+    text-decoration: none;
+    color: black;
+}
+
+.image_frame_float {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    overflow: hidden;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    -webkit-column-count: 3;
+    column-count: 3;
+}
+
+.image_frame_float img {
+    height: 300px;
+    width: 300px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media only screen and (min-width: 768px) {
+
+    .image_frame_float {
+        float: left;
+        width: 33.33%;
+    }
+
+    .image_frame_float img {
+        height: 200px;
+        width: 200px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+
+    .image_frame_float img {
+        height: 400px;
+        width: 400px;
+    }
+}
+
+/******
+
+/*Flex page styling*/
+
+.flex_body {
+    margin: auto;
+    width: 80%;
+}
+
+.flex_body a {
+    text-decoration: none;
+    color: black;
+}
+
+.flex_h1 {
+    color: rgb(35, 213, 153);
+}
+
+#flex_container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+#flex_container>div {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 100%;
+    flex: 0 100%;
+}
+
+.image_frame_flex {
+    overflow: hidden;
+}
+
+.image_frame_flex img {
+    height: 300px;
+    width: 300px;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+@media only screen and (min-width: 768px) {
+
+    #flex_container>div {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 33%;
+        flex: 0 33%;
+    }
+
+    .image_frame_flex {
+        margin: 0;
+    }
+
+    .image_frame_flex img {
+        height: 200px;
+        width: 200px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+
+    .image_frame_flex img {
+        height: 400px;
+        width: 400px;
+    }
+}
