@@ -53,8 +53,9 @@ input {
     border: 1px solid black;
     border-radius: 25px;
     text-indent: 10px;
-    font-size: 1.5em;
-    width: 170px;
+    font-size: 1.3em;
+    padding: 0.2em;
+    width: 250px;
 }
 
 /******
